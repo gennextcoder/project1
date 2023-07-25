@@ -12,24 +12,24 @@ docker logs c0c5680af
 
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
-* Serving Flask app 'app' (lazy loading)
+ * Serving Flask app 'app' (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
-WARNING:werkzeug: * Running on all addresses.
+2023-07-25 03:03:36 WARNING   * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:22:55] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:22:55] "GET /static/css/main.css HTTP/1.1" 304 -
-DEBUG:app:The "About us" page has been retrieved!
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:23:00] "GET /about HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:23:00] "GET /static/css/main.css HTTP/1.1" 304 -
-DEBUG:app:Article 2020 CNCF Annual Report retrieved!
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:23:04] "GET /1 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:23:04] "GET /static/css/main.css HTTP/1.1" 304 -
-DEBUG:app:Article not found
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:23:09] "GET /8 HTTP/1.1" 404 -
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:23:09] "GET /static/css/main.css HTTP/1.1" 304 -
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:23:11] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [24/Jul/2023 09:23:11] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-07-25 03:03:36 INFO      * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+2023-07-25 03:03:52 INFO     172.17.0.1 - - [25/Jul/2023 03:03:52] "GET / HTTP/1.1" 200 -
+2023-07-25 03:03:52 INFO     172.17.0.1 - - [25/Jul/2023 03:03:52] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-07-25 03:03:58 DEBUG    The "About us" page has been retrieved!
+2023-07-25 03:03:58 INFO     172.17.0.1 - - [25/Jul/2023 03:03:58] "GET /about HTTP/1.1" 200 -
+2023-07-25 03:03:58 INFO     172.17.0.1 - - [25/Jul/2023 03:03:58] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-07-25 03:04:25 INFO     172.17.0.1 - - [25/Jul/2023 03:04:25] "GET / HTTP/1.1" 200 -
+2023-07-25 03:04:25 INFO     172.17.0.1 - - [25/Jul/2023 03:04:25] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-07-25 03:04:32 DEBUG    Article not found
+2023-07-25 03:04:32 INFO     172.17.0.1 - - [25/Jul/2023 03:04:32] "GET /7 HTTP/1.1" 404 -
+2023-07-25 03:04:32 INFO     172.17.0.1 - - [25/Jul/2023 03:04:32] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-07-25 03:04:40 DEBUG    Article 2020 CNCF Annual Report retrieved!
+2023-07-25 03:04:40 INFO     172.17.0.1 - - [25/Jul/2023 03:04:40] "GET /1 HTTP/1.1" 200 -
+2023-07-25 03:04:40 INFO     172.17.0.1 - - [25/Jul/2023 03:04:40] "GET /static/css/main.css HTTP/1.1" 304 -
