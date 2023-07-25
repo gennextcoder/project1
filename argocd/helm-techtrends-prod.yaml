@@ -12,6 +12,6 @@ spec:
     helm:
       valueFiles:
       - values-prod.yaml
-    path: project/helm/
-    repoURL: https://github.com/gennextcoder/nd064_course_1
+    path: helm/
+    repoURL: git@github.com:gennextcoder/project1.git
     targetRevision: HEAD
