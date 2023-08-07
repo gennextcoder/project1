@@ -3,6 +3,7 @@ import sqlite3
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 import logging
+import sys
 
 num_db_connections = 0
 
@@ -99,5 +100,6 @@ if __name__ == "__main__":
    logging.basicConfig(
            format='%(asctime)s %(levelname)-8s %(message)s',
            level=logging.DEBUG,
-           datefmt='%Y-%m-%d %H:%M:%S')
+           datefmt='%Y-%m-%d %H:%M:%S',
+           handlers=[logging.StreamHandler(sys.stdout), logging.StreamHandler(sys.stderr)])
    app.run(host='0.0.0.0', port='3111')

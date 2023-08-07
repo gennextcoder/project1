@@ -4,32 +4,56 @@ docker build -t techtrends .
 
 ## Docker commands used to run the application
 # TODO: insert the docker run command
-docker run -d -p 7111:3111 techtrends
+docker run -d -p 7111:3111 --name techtrends techtrends
 
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
-docker logs c0c5680af
+docker logs techtrends
 
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
- * Serving Flask app 'app' (lazy loading)
+* Serving Flask app 'app' (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
-2023-07-25 03:03:36 WARNING   * Running on all addresses.
+2023-08-07 08:34:25 WARNING   * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-2023-07-25 03:03:36 INFO      * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-2023-07-25 03:03:52 INFO     172.17.0.1 - - [25/Jul/2023 03:03:52] "GET / HTTP/1.1" 200 -
-2023-07-25 03:03:52 INFO     172.17.0.1 - - [25/Jul/2023 03:03:52] "GET /static/css/main.css HTTP/1.1" 200 -
-2023-07-25 03:03:58 DEBUG    The "About us" page has been retrieved!
-2023-07-25 03:03:58 INFO     172.17.0.1 - - [25/Jul/2023 03:03:58] "GET /about HTTP/1.1" 200 -
-2023-07-25 03:03:58 INFO     172.17.0.1 - - [25/Jul/2023 03:03:58] "GET /static/css/main.css HTTP/1.1" 304 -
-2023-07-25 03:04:25 INFO     172.17.0.1 - - [25/Jul/2023 03:04:25] "GET / HTTP/1.1" 200 -
-2023-07-25 03:04:25 INFO     172.17.0.1 - - [25/Jul/2023 03:04:25] "GET /static/css/main.css HTTP/1.1" 304 -
-2023-07-25 03:04:32 DEBUG    Article not found
-2023-07-25 03:04:32 INFO     172.17.0.1 - - [25/Jul/2023 03:04:32] "GET /7 HTTP/1.1" 404 -
-2023-07-25 03:04:32 INFO     172.17.0.1 - - [25/Jul/2023 03:04:32] "GET /static/css/main.css HTTP/1.1" 304 -
-2023-07-25 03:04:40 DEBUG    Article 2020 CNCF Annual Report retrieved!
-2023-07-25 03:04:40 INFO     172.17.0.1 - - [25/Jul/2023 03:04:40] "GET /1 HTTP/1.1" 200 -
-2023-07-25 03:04:40 INFO     172.17.0.1 - - [25/Jul/2023 03:04:40] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:34:25 WARNING   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2023-08-07 08:34:25 INFO      * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+2023-08-07 08:34:25 INFO      * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+2023-08-07 08:34:31 INFO     172.17.0.1 - - [07/Aug/2023 08:34:31] "GET / HTTP/1.1" 200 -
+2023-08-07 08:34:31 INFO     172.17.0.1 - - [07/Aug/2023 08:34:31] "GET / HTTP/1.1" 200 -
+2023-08-07 08:34:31 INFO     172.17.0.1 - - [07/Aug/2023 08:34:31] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:34:31 INFO     172.17.0.1 - - [07/Aug/2023 08:34:31] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:34:36 DEBUG    The "About us" page has been retrieved!
+2023-08-07 08:34:36 DEBUG    The "About us" page has been retrieved!
+2023-08-07 08:34:36 INFO     172.17.0.1 - - [07/Aug/2023 08:34:36] "GET /about HTTP/1.1" 200 -
+2023-08-07 08:34:36 INFO     172.17.0.1 - - [07/Aug/2023 08:34:36] "GET /about HTTP/1.1" 200 -
+2023-08-07 08:34:36 INFO     172.17.0.1 - - [07/Aug/2023 08:34:36] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:34:36 INFO     172.17.0.1 - - [07/Aug/2023 08:34:36] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:34:40 DEBUG    Article KubeCon + CloudNativeCon 2021 retrieved!
+2023-08-07 08:34:40 DEBUG    Article KubeCon + CloudNativeCon 2021 retrieved!
+2023-08-07 08:34:40 INFO     172.17.0.1 - - [07/Aug/2023 08:34:40] "GET /2 HTTP/1.1" 200 -
+2023-08-07 08:34:40 INFO     172.17.0.1 - - [07/Aug/2023 08:34:40] "GET /2 HTTP/1.1" 200 -
+2023-08-07 08:34:40 INFO     172.17.0.1 - - [07/Aug/2023 08:34:40] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:34:40 INFO     172.17.0.1 - - [07/Aug/2023 08:34:40] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:35:10 DEBUG    Article not found
+2023-08-07 08:35:10 DEBUG    Article not found
+2023-08-07 08:35:10 INFO     172.17.0.1 - - [07/Aug/2023 08:35:10] "GET /8 HTTP/1.1" 404 -
+2023-08-07 08:35:10 INFO     172.17.0.1 - - [07/Aug/2023 08:35:10] "GET /8 HTTP/1.1" 404 -
+2023-08-07 08:35:10 INFO     172.17.0.1 - - [07/Aug/2023 08:35:10] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:35:10 INFO     172.17.0.1 - - [07/Aug/2023 08:35:10] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:35:17 INFO     172.17.0.1 - - [07/Aug/2023 08:35:17] "GET /create HTTP/1.1" 200 -
+2023-08-07 08:35:17 INFO     172.17.0.1 - - [07/Aug/2023 08:35:17] "GET /create HTTP/1.1" 200 -
+2023-08-07 08:35:17 INFO     172.17.0.1 - - [07/Aug/2023 08:35:17] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:35:17 INFO     172.17.0.1 - - [07/Aug/2023 08:35:17] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:35:52 DEBUG    Article New article has been created!
+2023-08-07 08:35:52 INFO     172.17.0.1 - - [07/Aug/2023 08:35:52] "POST /create HTTP/1.1" 302 -
+2023-08-07 08:35:52 DEBUG    Article New article has been created!
+2023-08-07 08:35:52 INFO     172.17.0.1 - - [07/Aug/2023 08:35:52] "POST /create HTTP/1.1" 302 -
+2023-08-07 08:35:53 INFO     172.17.0.1 - - [07/Aug/2023 08:35:53] "GET / HTTP/1.1" 200 -
+2023-08-07 08:35:53 INFO     172.17.0.1 - - [07/Aug/2023 08:35:53] "GET / HTTP/1.1" 200 -
+2023-08-07 08:35:53 INFO     172.17.0.1 - - [07/Aug/2023 08:35:53] "GET /static/css/main.css HTTP/1.1" 304 -
+2023-08-07 08:35:53 INFO     172.17.0.1 - - [07/Aug/2023 08:35:53] "GET /static/css/main.css HTTP/1.1" 304 -
